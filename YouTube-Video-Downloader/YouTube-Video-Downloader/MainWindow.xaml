@@ -5,11 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:YouTube_Video_Downloader"
         mc:Ignorable="d"
-        Title="Video Downloader" Height="450" Width="500" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Video Downloader" Height="400" Width="500" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Closing="Main_Window_Closing">
     <Grid>
-        <Label x:Name="Lbl_URL" Content="URL:" HorizontalAlignment="Left" Margin="33,53,0,0" VerticalAlignment="Top" Height="30" Width="44" FontSize="16"/>
-        <TextBox x:Name="TxtBox_URL" HorizontalAlignment="Left" Height="23" Margin="75,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="287"/>
-        <Button x:Name="Button_Connect" Content="Connect" HorizontalAlignment="Left" Margin="379,59,0,0" VerticalAlignment="Top" Width="75" Click="Button_Connect_Click" Height="23"/>
-
+        <Label x:Name="Lbl_URL" Content="URL:" HorizontalAlignment="Left" Margin="3,57,0,0" VerticalAlignment="Top" Height="30" Width="48" FontSize="16" FontFamily="Bookman Old Style"/>
+        <TextBox x:Name="TxtBox_URL" HorizontalAlignment="Left" Height="23" Margin="51,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="423" FontFamily="Bookman Old Style"/>
+        <Button x:Name="Btn_Connect" Content="Connect" HorizontalAlignment="Left" Margin="380,91,0,0" VerticalAlignment="Top" Width="94" Click="Button_Connect_Click" Height="23" FontFamily="Bookman Old Style"/>
+        <Label x:Name="Lbl_Quality" Content="Chose quality:" HorizontalAlignment="Left" Margin="5,215,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Bookman Old Style"/>
+        <Button x:Name="Btn_Buf" Content="Get link" HorizontalAlignment="Left" Margin="416,245,0,0" VerticalAlignment="Top" Width="58" Height="23" FontFamily="Bookman Old Style" Click="Button_Buf_Click"/>
+        <Button x:Name="Btn_Save" Content="Download" HorizontalAlignment="Left" Margin="321,245,0,0" VerticalAlignment="Top" Width="90" Height="23" Click="Btn_Save_Click" FontFamily="Bookman Old Style"/>
+        <ComboBox x:Name="ComboBox_Quality" HorizontalAlignment="Left" Margin="10,246,0,0" VerticalAlignment="Top" Width="120" FontFamily="Bookman Old Style" SelectionChanged="ComboBox_Quality_SelectionChanged"/>
+        <Label x:Name="Lbl_Title" Content="Title:" HorizontalAlignment="Left" Margin="5,170,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Bookman Old Style"/>
+        <Button x:Name="Btn_Path" Content="Set The Path" HorizontalAlignment="Left" Margin="229,245,0,0" VerticalAlignment="Top" Width="87" Height="24" FontFamily="Bookman Old Style" Click="Btn_Path_Click"/>
+        <TextBox x:Name="TxtBox_Title" HorizontalAlignment="Left" Height="52" Margin="54,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="420" FontFamily="Bookman Old Style" FontSize="11" IsReadOnly="True"/>
+        <ProgressBar x:Name="PB_Download" HorizontalAlignment="Left" Height="22" Margin="10,306,0,0" VerticalAlignment="Top" Width="464"/>
+        <Label x:Name="Lbl_Size" Content="NULL" HorizontalAlignment="Left" Margin="11,277,0,0" VerticalAlignment="Top" FontFamily="Bookman Old Style"/>
+        <Label x:Name="Lbl_StartDownload" Content="0%" HorizontalAlignment="Left" Margin="227,304,0,0" VerticalAlignment="Top"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="4,36,0,0" VerticalAlignment="Top" Width="477"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="205" Margin="4,141,0,0" VerticalAlignment="Top" Width="477"/>
+        <Menu x:Name="Menu" HorizontalAlignment="Left" Height="21" VerticalAlignment="Top" Width="494" Margin="0,0,-0.4,0">
+            <MenuItem x:Name="MenuItem_Help" Header="Help" Click="MenuItem_Help_Click"/>
+        </Menu>
     </Grid>
 </Window>
