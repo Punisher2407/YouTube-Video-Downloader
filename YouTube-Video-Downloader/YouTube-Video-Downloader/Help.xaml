@@ -1,0 +1,12 @@
+﻿<Window x:Name="Help_Window" x:Class="YouTube_Video_Downloader.Help"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:YouTube_Video_Downloader"
+        mc:Ignorable="d"
+        Title="Help" Height="250" Width="600" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="3734483-arm-captain-halloween-hand-hook-pirate-scary_108941.ico">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="200" Width="574" FontFamily="Bookman Old Style"><Run Text="Instruction:"/><LineBreak/><Run/><LineBreak/><Run Text="1) Copy the desired link to the YouTube video in the browser and paste it into the URL field"/><Run Text="."/><Run Text=" "/><LineBreak/><Run Text="("/><Run Text="example of correct video URL: https://www.youtube.com/watch?v=ssDtj1uL1Go)"/><LineBreak/><Run/><LineBreak/><Run Text="2) Choose quality form ComboBox."/><LineBreak/><Run/><LineBreak/><Run Text="3) Set the path for further download"/><Run Text="."/><LineBreak/><Run/><LineBreak/><Run Text="4) After selecting the path, you can:"/><LineBreak/><Run Text="&#x9;a) Download the video"/><Run Text=";"/><LineBreak/><Run Text="&#x9;b) Get a link to a streaming video"/><Run Text="."/><LineBreak/><Run/><LineBreak/><Run Text="5"/><Run Text=")"/><Run Text=" After downloading the desired video, close the program and repeat the above steps"/><Run Text="."/></TextBlock>
+    </Grid>
+</Window>
